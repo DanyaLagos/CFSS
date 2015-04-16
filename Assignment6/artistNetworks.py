@@ -17,7 +17,7 @@ def getRelatedArtists(artistID):
 
 	return relatedartist_List
 
-print getRelatedArtists("0OdUWJ0sBjDrqHygGUXeCF")
+#print getRelatedArtists("6deZN1bslXzeGvOLaLMOIF")
 
 
 '''Function I.2:
@@ -69,5 +69,4 @@ def writeEdgeList(artistID, depth, filename):
 	EdgeList = getEdgeList(artistID, depth)
 	EdgeList.to_csv(filename, index=False)
 
-writeEdgeList ("0OdUWJ0sBjDrqHygGUXeCF", 2, "filename.csv")
-#himom
+writeEdgeList ("6deZN1bslXzeGvOLaLMOIF", 2, "filename.csv")
