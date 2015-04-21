@@ -32,7 +32,13 @@ def fetchArtistInfo(artist_id):
     artist_info['name'] = data['name']
     artist_info['popularity'] = data['popularity']
     
-    return artist_info 
+    relatedartist_Names = []
+    for relatedartist in data['lists']:
+        relatedartist_Names.append(relatedartist['name'])
+
+
+    return relatedartist_Names
 
 
 print getRelatedArtists("6deZN1bslXzeGvOLaLMOIF")
+print fetchArtistInfo("6deZN1bslXzeGvOLaLMOIF")
