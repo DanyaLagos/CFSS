@@ -17,27 +17,4 @@ def getRelatedArtists(artistID):
 
 	return relatedartist_List
 
-'''Next need function that will take these lists and convert them to names. Then string tuples.'''
-def fetchArtistInfo(artist_id):
-    """Using the Spotify API, takes a string representing the id and
-`   returns a dictionary including the keys 'followers', 'genres', 
-    'id', 'name', and 'popularity'.
-    """
-    
-
-    artist_info = {}
-    artist_info['followers'] = data['followers']['total']
-    artist_info['genres'] = data['genres']
-    artist_info['id'] = data['id']
-    artist_info['name'] = data['name']
-    artist_info['popularity'] = data['popularity']
-    
-    relatedartist_Names = []
-    for relatedartist in data['lists']:
-        relatedartist_Names.append(relatedartist['name'])
-
-
-    return relatedartist_Names
-
-
 print getRelatedArtists("6deZN1bslXzeGvOLaLMOIF")
