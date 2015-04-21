@@ -18,3 +18,5 @@ def getRelatedArtists(artistID):
 	return relatedartist_List
 
 print getRelatedArtists("6deZN1bslXzeGvOLaLMOIF")
+
+#NEXT STEPS - INCORPORATE THIS SOMEHOW INTO FUNCTION THAT REPLICATES THE FUNCTION OF artistNetworks.py
