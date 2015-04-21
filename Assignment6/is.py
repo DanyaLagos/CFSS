@@ -13,7 +13,7 @@ def getRelatedArtists(artistID):
 
 	relatedartist_List = [] 
 	for relatedartist in data['artists']:
-		relatedartist_List.append(relatedartist['id'])
+		relatedartist_List.append(relatedartist['name'])
 
 	return relatedartist_List
 
@@ -41,4 +41,3 @@ def fetchArtistInfo(artist_id):
 
 
 print getRelatedArtists("6deZN1bslXzeGvOLaLMOIF")
-print fetchArtistInfo("6deZN1bslXzeGvOLaLMOIF")
